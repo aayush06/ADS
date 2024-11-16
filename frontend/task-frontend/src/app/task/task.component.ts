@@ -1,5 +1,7 @@
+// src/app/task/task.component.ts
 import { Component } from '@angular/core';
 import { TaskService } from '../task.service';
+
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',
@@ -10,7 +12,9 @@ export class TaskComponent {
 
   createTask() {
     this.taskService.createTask().subscribe(response => {
-      alert(response.message);
+      console.log('Task Created:', response);
+    }, error => {
+      console.error('Error creating task:', error);
     });
   }
 }

@@ -1,10 +1,10 @@
+// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';  
-import { AppRoutingModule } from './app-routing.module'; 
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { TaskComponent } from './task/task.component'; 
-import { TaskService } from './task.service'; 
+import { TaskComponent } from './task/task.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +14,9 @@ import { TaskService } from './task.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule
   ],
-  providers: [TaskService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
