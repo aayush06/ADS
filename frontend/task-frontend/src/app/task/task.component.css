@@ -1,0 +1,10 @@
+/* Add any styles for the task component here */
+button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
