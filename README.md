@@ -13,4 +13,4 @@
 - download dependencies
 ```npm install```
 - start server 
-``` npm serve```
+```ng serve```
